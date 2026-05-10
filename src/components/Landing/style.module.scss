@@ -1,4 +1,12 @@
 .landing {
     height: 100dvh;
     width: 100vw;
+    overflow: hidden;
+    position: relative;
+
+    .bgImage {
+        object-fit: cover;
+        object-position: center;
+        will-change: transform;
+    }
 }
