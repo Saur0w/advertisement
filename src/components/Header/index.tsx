@@ -17,8 +17,8 @@ export default function Header() {
         scope: headerRef
     });
     return (
-        <header className="header" ref={headerRef}>
-
+        <header className={styles.header} ref={headerRef}>
+            <h1>Veloura</h1>
         </header>
     );
 }
