@@ -10,16 +10,17 @@ import Image from "next/image";
 gsap.registerPlugin(SplitText, useGSAP);
 
 export default function Landing() {
-    const bgRef = useRef<HTMLImageElement>(null);
+    const landingRef = useRef<HTMLDivElement>(null);
+    const imageRef = useRef<HTMLImageElement>(null);
 
     useGSAP(() => {
         // TODO: add parallax scroll animation with gsap
-    }, { scope: bgRef });
+    }, { scope: landingRef });
 
     return (
         <section className={styles.landing}>
             <Image
-                ref={bgRef}
+                ref={imageRef}
                 src="/images/main.jpg"
                 alt="Landing background"
                 fill
