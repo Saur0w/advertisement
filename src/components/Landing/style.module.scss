@@ -1,22 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
 .landing {
-    height: 120dvh;
+    height: 200dvh;
     width: 100vw;
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cormorant Garamond", serif;
 
     .imageContainer {
         position: absolute;
         top: -10vh;
         left: 0;
         width: 100%;
-        height: 120vh;
+        height: 200vh;
         z-index: -1;
         will-change: transform;
 
         img {
             object-fit: cover;
             object-position: center;
+        }
+    }
+    .text {
+        color: #2e2d2d;
+        font-size: 4vw;
+        text-align: center;
+        justify-self: center;
+        margin-top: -800px;
+        .top {
+            overflow: hidden;
+        }
+
+        .mask {
+            height: 14vw;
+            overflow: hidden;
+        }
+
+        .words {
+            display: flex;
+            flex-direction: column;
+            will-change: transform;
+            gap: 1vw;
+
+            h1 {
+                font-family: "Cormorant Garamond", serif;
+                font-size: 12vw;
+                font-weight: 300;
+                line-height: 1;
+            }
+        }
+
+        .left {
+            margin-left: -50vw;
+        }
+
+        .right {
+            margin-right: -50vw;
+        }
+
+        .bottom {
+            margin-top: 10px;
+        }
+    }
+
+    .shoeImageContainer {
+        position: absolute;
+        height: 500px;
+        width: 300px;
+        margin-top: 1200px;
+        img {
+            object-fit: cover;
         }
     }
 }
